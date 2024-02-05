@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'Vertigo-Regular';
+    src: url(/assets/fonts/Vertigo.woff);
+}
+@font-face {
+    font-family: 'Vertigo-Semibold';
+    src: url(/assets/fonts/Vertigo-DemiBold.woff);
+}
+@font-face {
+    font-family: 'Vertigo-Bold';
+    src: url(/assets/fonts/Vertigo-Bold.woff);
+}
+body {
+    margin: 0;
+    font-family: 'Vertigo-Regular';
+}
+.body-background {
+    background-color: #D9E1D5;
+}
+.banner-background {
+    background: url(/assets/Mask\ Group\ 6.png);
+    min-height: 520px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+.logo-text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+}
+.logo-wrapper {
+    text-align: center;
+}
+.logo-wrapper h1 {
+    margin-top: 60px;
+    color: #D9E1D5;
+    font-family: 'Vertigo-Semibold';
+}
+.country-selector-wrapper {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-50%);
+    gap: 3%;
+}
+.canada-wrapper {
+    max-width: 700px;
+    width: 100%;
+    background: url(/assets/IMG.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+.canada-wrapper::after, .usa-wrapper::after {
+    content: '';
+    background-color: #00000033;
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    border-radius: 15px;
+    display: none;
+}
+.usa-wrapper {
+    max-width: 700px;
+    width: 100%;
+    background: url(/assets/IMG-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+.usa-wrapper:hover .flag-wrapper .usa-arrow, .canada-wrapper:hover .flag-wrapper .canada-arrow {
+    visibility: visible;
+    transition: all 0.3s ease-in;
+}
+.usa-wrapper:hover .animation, .canada-wrapper:hover .animation {
+    transform: translateY(-10px);
+    transition: all 0.2s ease-in-out;
+}
+.usa-wrapper:hover::after, .canada-wrapper:hover::after {
+    display: block;
+}
+.flag-wrapper {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 105px 0;
+    border-radius: 15px;
+}
+.flag-wrapper img {
+    width: 75px;
+    height: 75px;
+}
+.flag-wrapper h2 {
+    color: #fff;
+    margin-top: 20px;
+}
+.flag-wrapper a {
+    background: white;
+    padding: 15px;
+    border-radius: 50%;
+}
+.canada-arrow, .usa-arrow {
+    visibility: hidden;
+}
+.flag-wrapper a i {
+    height: 20px;
+    width: 20px;
+    margin-top: 20px;
+    color: #000;
+}
+.animation {
+    transform: translateY(30px);
+    transition: all 0.5s ease-in-out;
+}
+.animation h2 {
+    font-family: 'Vertigo-Semibold';
+}
+footer {
+    text-align: center;
+}
+.cta-green-wrapper {
+    background-color: #158A43BF;
+    border: 1px solid #158A4340 ;
+    max-width: 400px;
+    margin: 0 auto 50px auto;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 20px;
+    border-radius: 50px;
+}
+.cta-green-wrapper p {
+    margin: 0;
+}
+.footer-bottom a {
+    text-decoration: none;
+    color: #8C8C8C;
+}
+.footer-bottom {
+    color: #8C8C8C;
+}
+@media only screen and (max-width: 575.98px) {
+    
+    .animation img {
+        width: 50px;
+        height: 50px;
+    }
+    .animation h2 {
+        font-size: 23px;
+    }
+    .canada-arrow, .usa-arrow {
+        padding: 8px!important;
+        visibility: visible;
+    }
+    .flag-wrapper {
+        padding: 5vw 0;
+    }
+    .cta-green-wrapper {
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 576px) {
+    .flag-wrapper {
+        padding: 73px 0;
+    }
+}
+@media only screen and (max-width: 767.98px) {
+    .country-selector-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        transform: none;
+        margin: 20px 0;
+    }
+    .canada-arrow, .usa-arrow {
+        visibility: visible;
+    }
+    .canada-wrapper:hover::after, .usa-wrapper:hover::after {
+        display: none;
+    }
+    .animation {
+        transform: none;
+        transition: none;
+    }
+    .banner-background {
+        min-height: unset;
+    }
+    .logo-wrapper h1 {
+        margin-top: 20px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .flag-wrapper {
+        padding: 32px 0;
+    }
+    .usa-wrapper:hover::after, .canada-wrapper:hover::after {
+        border-radius: 8px;
+    }
+    .animation img {
+        width: 50px;
+        height: 50px;
+    }
+    .animation h2 {
+        font-size: 23px;
+    }
+    .canada-arrow, .usa-arrow {
+        padding: 8px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .flag-wrapper {
+        padding: 52px 0;
+    }
+    .usa-wrapper:hover::after, .canada-wrapper:hover::after {
+        border-radius: 15px;
+    }
+    .animation img {
+        width: 75px;
+        height: 75px;
+    }
+    .animation h2 {
+        font-size: 2rem;
+    }
+    .canada-arrow, .usa-arrow {
+        padding: 15px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .flag-wrapper {
+        padding: 79px 0;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .flag-wrapper {
+        padding: 105px 0;
+    }
+}
+
+

@@ -1,2 +1,0 @@
-# alkmedaffairs
-Medaffairs Gating page
