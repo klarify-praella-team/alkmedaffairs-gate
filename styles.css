@@ -122,11 +122,13 @@ body {
 }
 footer {
     text-align: center;
+    transform: translateY(-75px);
+    font-family: 'Vertigo-Regular';
 }
 .cta-green-wrapper {
     background-color: #158A43BF;
     border: 1px solid #158A4340 ;
-    max-width: 400px;
+    /*max-width: 400px;*/
     margin: 0 auto 50px auto;
     color: #fff;
     font-size: 20px;
