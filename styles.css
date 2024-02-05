@@ -122,7 +122,6 @@ body {
 }
 footer {
     text-align: center;
-    transform: translateY(-75px);
     font-family: 'Vertigo-Regular';
 }
 .cta-green-wrapper {
@@ -212,6 +211,9 @@ footer {
     }
     .canada-arrow, .usa-arrow {
         padding: 8px;
+    }
+    footer {
+        transform: translateY(-75px);
     }
 }
 @media only screen and (min-width: 992px) {
