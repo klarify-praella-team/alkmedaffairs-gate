@@ -18,7 +18,7 @@ body {
     background-color: #D9E1D5;
 }
 .banner-background {
-    background: url(/assets/Mask\ Group\ 6.png);
+    background: url(assets/Mask\ Group\ 6.png);
     min-height: 520px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -47,7 +47,7 @@ body {
 .canada-wrapper {
     max-width: 700px;
     width: 100%;
-    background: url(/assets/IMG.png);
+    background: url(assets/IMG.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -67,7 +67,7 @@ body {
 .usa-wrapper {
     max-width: 700px;
     width: 100%;
-    background: url(/assets/IMG-1.png);
+    background: url(assets/IMG-1.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
