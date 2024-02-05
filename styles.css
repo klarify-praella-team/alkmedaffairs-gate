@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Vertigo-Regular';
-    src: url(/assets/fonts/Vertigo.woff);
+    src: url(assets/fonts/Vertigo.woff);
 }
 @font-face {
     font-family: 'Vertigo-Semibold';
-    src: url(/assets/fonts/Vertigo-DemiBold.woff);
+    src: url(assets/fonts/Vertigo-DemiBold.woff);
 }
 @font-face {
     font-family: 'Vertigo-Bold';
-    src: url(/assets/fonts/Vertigo-Bold.woff);
+    src: url(assets/fonts/Vertigo-Bold.woff);
 }
 body {
     margin: 0;
