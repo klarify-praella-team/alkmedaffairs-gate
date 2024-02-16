@@ -127,13 +127,11 @@ footer {
 .cta-green-wrapper {
     background-color: #158A43BF;
     border: 1px solid #158A4340 ;
-    /*max-width: 400px;*/
     margin: 0 auto 50px auto;
     color: #fff;
     font-size: 20px;
     letter-spacing: 1px;
     padding: 20px;
-    border-radius: 50px;
 }
 .cta-green-wrapper p {
     margin: 0;
